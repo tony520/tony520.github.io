@@ -44,9 +44,11 @@ h1{
 	margin-bottom:30px;
 }
 strong{
+	font-size: 1.05em;
 	font-weight:bold;
 }
 strong a{
+	font-size: 1.05em;
 	border:none;
 }
 ul{
@@ -107,5 +109,6 @@ header small{
 	margin-bottom:30px;
 }
 .content p strong{
+	font-size: 1.05em;
 	font-weight:600;
 } 
