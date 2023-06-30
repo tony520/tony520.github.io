@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/32926c7632.js" crossorigin="anonymous"></script>
+    <style>
+      /* Adjust the map container size */
+      #map {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
     <link rel="stylesheet" type="text/css" href="stylesheets/taoni.css">
   </head>
   <body>
@@ -27,15 +34,17 @@
     	 		<li><a href="mailto:taoni0718@gmail.com">taoni0718 AT gmail DOT com</a></li>
     	 	</ul>
     	 </nav> 
+       <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=wq9TJKDXCOAjCIHvdJgioNwGI9MqZSMmazdqR-StOtk"></script>
     </header>
 
     <section class="content">
     	<p>
 		<h2>About Me</h2>
 		<p>I'm currently a third-year Ph.D. student at City University of Hong Kong, co-advised by <a href="https://www.weitaoxu.com">Dr. Weitao Xu</a> and <a href="https://bruceqczhao.github.io">Dr. Qingchuan Zhao</a>. Previously, I received my M.E. degree at Australia National University (ANU), co-advised by <a href="http://users.cecs.anu.edu.au/~gferraro/index.html">Dr. Gabriela Ferraro</a> and <a href="http://users.cecs.anu.edu.au/~u5170295/">Dr. Qing Wang</a>. I obtained my B.E. degree at at Shanghai Jiao Tong University (SJTU), advised by <a href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html">Prof. Xinbing Wang</a>.</p>
-    <p>My research interests include cyber-physical system security, contactless side channels, low-power wireless sensing, and vulnerability discovery (mobile apps, cloud, IoT).</p>
+    <p>My research interests include cyber-physical system security, contactless side channels, low-power wireless sensing, and vulnerability discovery (mobile apps, cloud, IoT, metaverse).</p>
     <h2>Recent News</h2>
     <ul>
+      <li><span>&bull; [June 2023] One paper was accepted by ACM TOSN, Congrats to Mingda!</span></li>
       <li><span>&bull; [Jan. 2023] One paper was accepted by ACM/IEEE IPSN 2023, Congrats to Zehua!</span></li>
       <li><span>&bull; [Dec. 2022] <b><i>WISERS</i></b> was accepted by IEEE S&P (Oakland) 2023.</span></li>
       <li><span>&bull; [July 2022] <b><i>AppListener</i></b> was accepted by USENIX Security 2023.</span></li>
@@ -46,10 +55,11 @@
     <ul>
       <!--li><a href="assets/taoniresume.pdf">CV</a></li>
       <li><a href="https://github.com/tony520">Github</a></li-->
-      <li><p><strong><a href="https://dl.acm.org/doi/10.1145/3583120.3586963"><big>FLoRa: Energy-Efficient, Reliable, and Beamforming-Assisted Over-The-Air Firmware Update in LoRa Networks</big></a></strong><br><i>Zehua Sun, <u>Tao Ni</u>, Huanqi Yang, Kai Liu, Yu Zhang, Tao Gu, Weitao Xu</i><br><strong>ACM/IEEE IPSN 2023</strong>, San Antonio, TX, USA, May 2023.</p></li>
-      <li><p><strong><a href="https://www.computer.org/csdl/proceedings-article/sp/2023/933600b828/1Js0Eo0y48g"><big>Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels</big></a></strong><br><i><u>Tao Ni</u>, Xiaokuan Zhang, Chaoshun Zuo, Jianfeng Li, Zhenyu Yan, Wubing Wang, Weitao Xu, Xiapu Luo, and Qingchuan Zhao</i><br><strong>IEEE S&P (Oakland) 2023</strong>, San Francisco, CA, USA, May 2023.</p></li>
-      <li><p><strong><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/ni"><big>Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting</big></a></strong><br><i><u>Tao Ni</u>, Guohao Lan, Jia Wang, Qingchuan Zhao, and Weitao Xu</i><br><strong>USENIX Security 2023</strong>, Anaheim, CA, USA, August 2023.</p></li>
-      <li><p><strong><a href="https://dl.acm.org/doi/abs/10.1145/3550292"><big>SwipePass: Acoustic-based Second-factor User Authentication for Smartphones</big></a></strong><br><i>Yongliang Chen, <u>Tao Ni</u>, Weitao Xu, and Tao Gu</i><br><strong>ACM UbiComp/IMWUT 2022</strong>, Atlanta, USA and Cambridge, UK, September 2022.</p></li>
+      <li><p><strong><big>Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels</big></strong><br><i><b>Tao Ni</b>, Xiaokuan Zhang, Chaoshun Zuo, Jianfeng Li, Zhenyu Yan, Wubing Wang, Weitao Xu, Xiapu Luo, and Qingchuan Zhao</i><br><strong>IEEE S&P (Oakland) 2023</strong>, San Francisco, CA, USA, May 2023.</p></li>
+      <li><p><strong><big>Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting</big></strong><br><i><b>Tao Ni</b>, Guohao Lan, Jia Wang, Qingchuan Zhao, and Weitao Xu</i><br><strong>USENIX Security 2023</strong>, Anaheim, CA, USA, August 2023.</p></li>
+      <li><p><strong><big>mmSign: mmWave-based Few-Shot Online Handwritten Signature Verification</big></strong><br><i>Minda Han, Huanqi Yang, <b>Tao Ni</b>, Di Duan, Mengzhe Ruan, Yongliang Chen, Jia Zhang, Weitao Xu</i><br><strong>ACM TOSN</strong></p></li>
+      <li><p><strong><big>FLoRa: Energy-Efficient, Reliable, and Beamforming-Assisted Over-The-Air Firmware Update in LoRa Networks</big></strong><br><i>Zehua Sun, <b>Tao Ni</b>, Huanqi Yang, Kai Liu, Yu Zhang, Tao Gu, Weitao Xu</i><br><strong>ACM/IEEE IPSN 2023</strong>, San Antonio, TX, USA, May 2023.</p></li>
+      <li><p><strong><big>SwipePass: Acoustic-based Second-factor User Authentication for Smartphones</big></strong><br><i>Yongliang Chen, <b>Tao Ni</b>, Weitao Xu, and Tao Gu</i><br><strong>ACM UbiComp/IMWUT 2022</strong>, Atlanta, USA and Cambridge, UK, September 2022.</p></li>
     </ul>
     <br>
     <h2>Professional Services</h2>
@@ -85,7 +95,5 @@
       	</footer>
 
     </section>
-
-  
   </body>
 </html>

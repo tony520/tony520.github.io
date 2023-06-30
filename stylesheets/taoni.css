@@ -1,15 +1,21 @@
 body{
-	color:#111;
-	background:#fff;
+	color:#000;
+	background:#eee;
 }
+
+body p, body span, body h1, h2, h3, h4, h5, h6 {
+	color: #000;
+}
+
+
 body{
-	background:-webkit-linear-gradient(left, #001a33 0%, #004080 100%);
-	background:-moz-linear-gradient(left, #001a33 0%, #004080 100%);
-	background:-o-linear-gradient(left, #001a33 0%, #004080 100%);
-	background:-ms-linear-gradient(left, #001a33 0%, #004080 100%);
-	background:linear-gradient(to right, #001a33 0%, #004080 100%);
+	background:-webkit-linear-gradient(left, #eeeeee 0%, #ffffff 100%);
+	background:-moz-linear-gradient(left, #eeeeee 0%, #ffffff 100%);
+	background:-o-linear-gradient(left, #eeeeee 0%, #ffffff 100%);
+	background:-ms-linear-gradient(left, #eeeeee 0%, #ffffff 100%);
+	background:linear-gradient(to right, #eeeeee 0%, #ffffff 100%);
 	color:#ede6d5;
-	font-family:"Georgia",serif;
+	font-family:"Georgia", serif;
 	font-size:14px;
 	margin:50px 100px 0;
 }
@@ -17,7 +23,7 @@ body{
 	body{margin:50px 50px 0}
 }
 a{
-	color:#4da6ff;
+	color:#777;
 	text-decoration:none;
 	font-size:1em;
 	-webkit-transition:all 1s;
