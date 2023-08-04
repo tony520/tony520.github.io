@@ -1,0 +1,10 @@
+@article{chen2022swipepass,
+  title={SwipePass: Acoustic-based second-factor user authentication for smartphones},
+  author={Chen, Yongliang and Ni, Tao and Xu, Weitao and Gu, Tao},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  volume={6},
+  number={3},
+  pages={1--25},
+  year={2022},
+  publisher={ACM New York, NY, USA}
+}

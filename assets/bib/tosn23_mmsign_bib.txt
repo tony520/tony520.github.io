@@ -1,0 +1,7 @@
+@article{han2023mmsign,
+  title={mmSign: mmWave-based Few-Shot Online Handwritten Signature Verification},
+  author={Han, Mingda and Yang, Huanqi and Ni, Tao and Duan, Di and Ruan, Mengzhe and Chen, Yongliang and Zhang, Jia and Xu, Weitao},
+  journal={ACM Transactions on Sensor Networks},
+  year={2023},
+  publisher={ACM New York, NY}
+}

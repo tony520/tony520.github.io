@@ -1,0 +1,8 @@
+@inproceedings{ni2023uncovering,
+  title={Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels},
+  author={Ni, Tao and Zhang, Xiaokuan and Zuo, Chaoshun and Li, Jianfeng and Yan, Zhenyu and Wang, Wubing and Xu, Weitao and Luo, Xiapu and Zhao, Qingchuan},
+  booktitle={2023 IEEE Symposium on Security and Privacy (SP)},
+  pages={3399--3415},
+  year={2023},
+  organization={IEEE}
+}

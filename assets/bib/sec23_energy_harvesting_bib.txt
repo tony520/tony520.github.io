@@ -1,0 +1,7 @@
+@inproceedings{ni2022eavesdropping,
+  title={Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting},
+  author={Ni, Tao and Lan, Guohao and Wang, Jia and Zhao, Qingchuan and Xu, Weitao},
+  booktitle={32nd USENIX Security Symposium (USENIX Security'23)},
+  year={2022},
+  organization={USENIX Association}
+}
