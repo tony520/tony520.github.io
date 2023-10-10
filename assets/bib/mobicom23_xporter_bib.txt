@@ -1,0 +1,7 @@
+@inproceedings{ni2023xporter,
+  title={XPorter: A Study of the Multi-Port Charger Security on Privacy Leakage and Voice Injection},
+  author={Ni, Tao and Chen, Yongliang and Xu, Weitao and Xue, Lei and Zhao, Qingchuan},
+  booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking},
+  pages={1--15},
+  year={2023}
+}
