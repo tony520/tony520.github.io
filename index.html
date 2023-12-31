@@ -89,7 +89,7 @@
 
       <h2 id="about-me">About Me</h2>
 
-<p>I'm a final-year Ph.D. student at City University of Hong Kong, co-advised by <a href="#">Dr. Weitao Xu</a> and <a href="https://bruceqczhao.github.io">Dr. Qingchuan Zhao</a>. Previously, I obtained my M.S. degree at Australia National University (ANU), and my B.E. degree at at Shanghai Jiao Tong University (SJTU), advised by <a href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html">Prof. Xinbing Wang</a>.</p>
+<p>I'm a final-year Ph.D. student at City University of Hong Kong, co-advised by <a href="https://www.weitaoxu.com">Dr. Weitao Xu</a> and <a href="https://bruceqczhao.github.io">Dr. Qingchuan Zhao</a>. Previously, I obtained my M.S. degree at Australia National University (ANU), and my B.E. degree at at Shanghai Jiao Tong University (SJTU), advised by <a href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html">Prof. Xinbing Wang</a>.</p>
 
 <p>My research interests include cyber-physical system security, contactless side channels, low-power wireless sensing, and vulnerability discovery (mobile apps, cloud, IoT, VR/AR, and LLMs).</p>
 
@@ -104,7 +104,7 @@
 
 <p>Currently, I'm doing my final-year Ph.D. study and looking for <u>postdoctoral</u> or <u>tenure-track faculty</u> opportunities. If you have any suitable positions, please contact me <a href="mailto:taoni2-c@my.cityu.edu.hk">taoni2-c@my.cityu.edu.hk</a>.</p>
 
-<ul>
+<!--ul>
   <li><strong>[Nov. 2023]</strong> One paper has been conditionally accepted by ACM MobiCom 2024.</li>
   <li><strong>[Sept. 2023]</strong> <b><i>FPLogger</i></b> was accepted by ACM CCS 2023.</li>
   <li><strong>[Sept. 2023]</strong> Received the RTS and OAPA awards. Thanks CityU!</li>
@@ -114,12 +114,97 @@
   <li><strong>[Dec. 2022]</strong> <b><i>WISERS</i></b> was accepted by IEEE S&P (Oakland) 2023.</li>
   <li><strong>[July 2022]</strong> <b><i>AppListener</i></b> was accepted by USENIX Security 2023.</li>
   <li><strong>[July 2022]</strong> One paper was accepted by ACM UbiComp/IMWUT 2022.</li>
+</ul-->
+
+
+<style>
+  .collapsed {
+    display: none;
+  }
+  
+  #showMore {
+    cursor: pointer;
+    color: blue;
+    /*text-decoration: underline;*/
+    display: flex;
+    align-items: center;
+  }
+  
+  #showMore i {
+    margin-right: 1px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #showMore {
+      color: white;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    #showMore {
+      color: black;
+    }
+  }
+
+/*  .publications ol.bibliography li {
+    min-height: 110px;
+    margin: 0 0 20px;
+    list-style-type: disc;
+    padding-left: 0em; /* Adjust the value as needed */
+    /*margin-left: 1rem;
+  }*/
+</style>
+
+<ul id="listItems">
+  <li><strong>[Nov. 2023]</strong> One paper has been conditionally accepted by ACM MobiCom 2024.</li>
+  <li><strong>[Sept. 2023]</strong> <b><i>FPLogger</i></b> was accepted by ACM CCS 2023.</li>
+  <li><strong>[Sept. 2023]</strong> Received the RTS and OAPA awards. Thanks CityU!</li>
+  <li><strong>[Aug. 2023]</strong> <b><i>BankSnoop</i></b> and <b><i>XPorter</i></b> were accepted by ACM MobiCom 2023.</li>
+  <li><strong>[June 2023]</strong> One paper was accepted by ACM TOSN.</li>
+  <li><strong>[Jan. 2023]</strong> One paper was accepted by ACM/IEEE IPSN 2023.</li>
+  <li class="collapsed"><strong>[Dec. 2022]</strong> <b><i>WISERS</i></b> was accepted by IEEE S&P (Oakland) 2023.</li>
+  <li class="collapsed"><strong>[July 2022]</strong> <b><i>AppListener</i></b> was accepted by USENIX Security 2023.</li>
+  <li class="collapsed"><strong>[July 2022]</strong> One paper was accepted by ACM UbiComp/IMWUT 2022.</li>
 </ul>
+
+<p id="showMore">
+  <i class="arrowIcon fas fa-chevron-down"></i>
+</p>
+
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+<script>
+  var showMoreButton = document.getElementById("showMore");
+  var listItems = document.getElementById("listItems").getElementsByTagName("li");
+  
+  for (var i = 6; i < listItems.length; i++) {
+    listItems[i].classList.add("collapsed");
+  }
+  
+  showMoreButton.addEventListener("click", function() {
+    for (var i = 6; i < listItems.length; i++) {
+      listItems[i].classList.toggle("collapsed");
+    }
+    
+    var arrowIcon = showMoreButton.querySelector(".arrowIcon");
+    
+    if (arrowIcon.classList.contains("fa-chevron-down")) {
+      arrowIcon.classList.remove("fa-chevron-down");
+      arrowIcon.classList.add("fa-chevron-up");
+    } else {
+      arrowIcon.classList.remove("fa-chevron-up");
+      arrowIcon.classList.add("fa-chevron-down");
+    }
+  });
+</script>
+
 
 <h2 id="publications" style="margin: 2px 0px -15px;">Publications <span style="font-size: 15px;">(* The corresponding author)</span></h2>
 
 <div class="publications">
 <ol class="bibliography">
+
+
+<h3>2023</h3>
 
 <li>
 <div class="pub-row">
@@ -128,13 +213,14 @@
             <abbr class="badge">MICCAI</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="#" target="_blank">Recovering Fingerprints from In-Display Fingerprint Sensors via Electromagnetic Side Channel</a></div>
+      <!--div class="title"><a href="#" target="_blank">Recovering Fingerprints from In-Display Fingerprint Sensors via Electromagnetic Side Channel</a></div-->
+      <div class="title"><a>[CCS'23]</a>&nbsp;&nbsp;&nbsp;Recovering Fingerprints from In-Display Fingerprint Sensors via Electromagnetic Side Channel</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Xiaokuan Zhang, and Qingchuan Zhao</div>
-      <div class="periodical"><em>ACM Conference on Computer and Communications Security <strong>(CCS)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 30th ACM Conference on Computer and Communications Security, Copenhagen, Denmark, Nov. 2023.</em>
       </div>
     <div class="links">
        
-      <!--a href="assets/paper/mobicom23_banksnoop.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a-->
+      <a href="https://dl.acm.org/doi/10.1145/3576915.3623153" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
 
       <!--a href="https://www.youtube.com/watch?v=zDF_oeYtwuM&t=19s" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Presentation</a-->
       
@@ -148,7 +234,7 @@
       <!--a href="https://github.com/CityuSeclab/BankSnoop_MobiCom23" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project</a-->
       
        
-      <strong> <i style="color:white;">(To appear)</i></strong>
+      <!--strong> <i style="color:white;">(To appear)</i></strong-->
       
       
     </div>
@@ -166,9 +252,10 @@
             <abbr class="badge">MICCAI</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3570361.3613288" target="_blank">Exploiting Contactless Side Channels in Wireless Charging Power Banks for User Privacy Inference via Few-shot Learning</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3570361.3613288" target="_blank">Exploiting Contactless Side Channels in Wireless Charging Power Banks for User Privacy Inference via Few-shot Learning</a></div-->
+      <div class="title"><a>[MobiCom'23]</a>&nbsp;&nbsp;&nbsp;Exploiting Contactless Side Channels in Wireless Charging Power Banks for User Privacy Inference via Few-shot Learning</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Jianfeng Li, Xiaokuan Zhang, Chaoshun Zuo, Wubing Wang, Weitao Xu, Xiapu Luo, and Qingchuan Zhao*</div>
-      <div class="periodical"><em>ACM International Conference on Mobile Computing and Networking <strong>(MobiCom)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 29th Annual International Conference on Mobile Computing and Networking, Madrid, Spain, Oct. 2023.</em>
       </div>
     <div class="links">
        
@@ -203,9 +290,10 @@
             <abbr class="badge">MICCAI</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3570361.3613293" target="_blank">XPorter: A Study of the Multi-Port Charger Security on Privacy Leakage and Voice Injection</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3570361.3613293" target="_blank">XPorter: A Study of the Multi-Port Charger Security on Privacy Leakage and Voice Injection</a></div-->
+      <div class="title"><a>[MobiCom'23]</a>&nbsp;&nbsp;&nbsp;XPorter: A Study of the Multi-Port Charger Security on Privacy Leakage and Voice Injection</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Yongliang Chen, Weitao Xu, Lei Xue, and Qingchuan Zhao*</div>
-      <div class="periodical"><em>ACM International Conference on Mobile Computing and Networking <strong>(MobiCom)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 29th Annual International Conference on Mobile Computing and Networking, Madrid, Spain, Oct. 2023.</em>
       </div>
     <div class="links">
        
@@ -242,9 +330,10 @@
             <abbr class="badge">MICCAI</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://ieeexplore.ieee.org/document/10179322" target="_blank">Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels</a></div>
+      <!--div class="title"><a href="https://ieeexplore.ieee.org/document/10179322" target="_blank">Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels</a></div-->
+      <div class="title"><a>[Oakland'23]</a>&nbsp;&nbsp;&nbsp;Uncovering User Interactions on Smartphones via Contactless Wireless Charging Side Channels</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Xiaokuan Zhang, Chaoshun Zuo, Jianfeng Li, Zhenyu Yan, Wubing Wang, Weitao Xu, Xiapu Luo, and Qingchuan Zhao*</div>
-      <div class="periodical"><em>IEEE Symposium on Security and Privacy <strong>(IEEE S&P, Oakland)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 44th IEEE Symposium on Security and Privacy, San Francisco, CA, USA, May 2023.</em>
       </div>
     <div class="links">
        
@@ -279,10 +368,11 @@
             <abbr class="badge">CVPR</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/ni" target="_blank">Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting
-</a></div>
+      <!--div class="title"><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/ni" target="_blank">Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting
+</a></div-->
+      <div class="title"><a>[USENIX Security'23]</a>&nbsp;&nbsp;&nbsp;Eavesdropping Mobile App Activity via Radio-Frequency Energy Harvesting</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Guohao Lan, Jia Wang, Qingchuan Zhao, and Weitao Xu*</div>
-      <div class="periodical"><em>USENIX Security Symposium<strong>(USENIX-SEC)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 32nd USENIX Security Symposium, Anaheim, CA, USA, Aug. 2023.</em>
       </div>
     <div class="links">
        
@@ -320,10 +410,11 @@
             <abbr class="badge">CVPR</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/10.1145/3583120.3586963" target="_blank">FLoRa: Energy-Efficient, Reliable, and Beamforming-Assisted Over-The-Air Firmware Update in LoRa Networks
-</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/10.1145/3583120.3586963" target="_blank">FLoRa: Energy-Efficient, Reliable, and Beamforming-Assisted Over-The-Air Firmware Update in LoRa Networks
+</a></div-->
+      <div class="title"><a>[IPSN'23]</a>&nbsp;&nbsp;&nbsp;FLoRa: Energy-Efficient, Reliable, and Beamforming-Assisted Over-The-Air Firmware Update in LoRa Networks</div>
       <div class="author">Zehua Sun, <strong><u>Tao Ni</u></strong>, Huanqi Yang, Kai Liu, Yu Zhang, Tao Gu, and Weitao Xu</div>
-      <div class="periodical"><em>ACM/IEEE International Conference on Information Processing in Sensor Networks<strong>(IPSN)</strong>, 2023.</em>
+      <div class="periodical"><em>In Proceedings of the 22nd International Conference on Information Processing in Sensor Networks, San Antonio, TX, USA, May 2023.</em>
       </div>
     <div class="links">
        
@@ -358,8 +449,9 @@
             <abbr class="badge">CVPR</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/10.1145/3605945" target="_blank">mmSign: mmWave-based Few-Shot Online Handwritten Signature Verification
-</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/10.1145/3605945" target="_blank">mmSign: mmWave-based Few-Shot Online Handwritten Signature Verification
+</a></div-->
+      <div class="title"><a>[TOSN]</a>&nbsp;&nbsp;&nbsp;mmSign: mmWave-based Few-Shot Online Handwritten Signature Verification</div>
       <div class="author">Minda Han, Huanqi Yang, <strong><u>Tao Ni</u></strong>, Di Duan, Mengzhe Ruan, Yongliang Chen, Jia Zhang, and Weitao Xu</div>
       <div class="periodical"><em>ACM Transactions on Sensor Networks<strong>(TOSN)</strong>, 2023.</em>
       </div>
@@ -387,6 +479,9 @@
 
 <br />
 
+
+<h3>2022</h3>
+
 <li>
 <div class="pub-row">
   <!--div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -394,10 +489,11 @@
             <abbr class="badge">CVPR</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/pdf/10.1145/3550292" target="_blank">SwipePass: Acoustic-based Second-factor User Authentication for Smartphones
-</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/pdf/10.1145/3550292" target="_blank">SwipePass: Acoustic-based Second-factor User Authentication for Smartphones
+</a></div-->
+      <div class="title"><a>[UbiComp/IMWUT'22]</a>&nbsp;&nbsp;&nbsp;SwipePass: Acoustic-based Second-factor User Authentication for Smartphones</div>
       <div class="author">Yongliang Chen, <strong><u>Tao Ni</u></strong>, Weitao Xu, and Tao Gu</div>
-      <div class="periodical"><em>ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies<strong>(UbiComp/IMWUT)</strong>, 2022.</em>
+      <div class="periodical"><em>In Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2022.</em>
       </div>
     <div class="links">
        
@@ -425,6 +521,8 @@
 
 <br />
 
+<h3>2021</h3>
+
 <li>
 <div class="pub-row">
   <!--div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -432,10 +530,11 @@
             <abbr class="badge">CVPR</abbr>
   </div-->
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3460418.3480399" target="_blank">A Simple and Fast Human Activity Recognition System Using Radio Frequency Energy Harvesting
-</a></div>
+      <!--div class="title"><a href="https://dl.acm.org/doi/abs/10.1145/3460418.3480399" target="_blank">A Simple and Fast Human Activity Recognition System Using Radio Frequency Energy Harvesting
+</a></div-->
+      <div class="title"><a>[UbiComp CPD Workshop'21]</a>&nbsp;&nbsp;&nbsp;A Simple and Fast Human Activity Recognition System Using Radio Frequency Energy Harvesting</div>
       <div class="author"><strong><u>Tao Ni</u></strong>, Yongliang Chen, Keqi Song, and Weitao Xu*</div>
-      <div class="periodical"><em>ACM International Conference on Pervasive and Ubiquitous Computing, CPD Workshop<strong>(UbiComp)</strong>, 2021.</em>
+      <div class="periodical"><em>Adjunct Proceedings of the 2021 ACM International Joint Conference on Pervasive and Ubiquitous Computing, Virtual, 2021</em>
       </div>
     <div class="links">
        
