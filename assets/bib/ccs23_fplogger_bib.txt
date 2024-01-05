@@ -1,0 +1,7 @@
+@inproceedings{ni2023recovering,
+  title={Recovering Fingerprints from In-Display Fingerprint Sensors via Electromagnetic Side Channel},
+  author={Ni, Tao and Zhang, Xiaokuan and Zhao, Qingchuan},
+  booktitle={Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={253--267},
+  year={2023}
+}
